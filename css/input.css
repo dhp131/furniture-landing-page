@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+	.text--22px {
+		font-size: -22px;
+	}
+	.text--20px {
+		font-size: -20px;
+	}
+}
+
+body {
+	@apply font-secondary text--22px text-secondary;
+	/* apply font cho toàn bộ trang */
+}
+
+a {
+	@apply text--20px hover:text-accent transition-all duration-300;
+}

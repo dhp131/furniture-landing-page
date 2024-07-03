@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ["./index.html", "./js/**/*.{js}"],
+	content: ["./index.html", "./js/**/*.js"],
 	theme: {
-		//set lại mặc định cho page
 		container: {
+			center: true,
 			padding: {
-				default: "15px",
+				DEFAULT: "15px",
 			},
 		},
-		screen: {
+		screens: {
 			sm: "640px",
 			md: "768px",
 			lg: "960px",
 			xl: "1200px",
 		},
 		fontFamily: {
-			primary: "DM Serif Display ",
+			primary: "DM Serif Display",
 			secondary: "Jost",
 		},
 		backgroundImage: {
@@ -25,15 +25,19 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: {
-					default: "#292f36",
+					DEFAULT: "#292f36",
 					hover: "#343e43",
 				},
 				secondary: "#4d5043",
 				accent: {
-					default: "#cda274",
+					DEFAULT: "#cda274",
 					secondary: "#f4f0ec",
 					hover: "#b88c5d",
 				},
+			},
+			fontSize: {
+				"-22px": ["-22px", "1.25rem"],
+				"-20px": ["-20px", "1.25rem"],
 			},
 		},
 	},
